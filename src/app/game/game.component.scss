@@ -1,0 +1,50 @@
+@import './../../mixins.scss';
+
+.game_field {
+    background: url('/assets/img/start_menu/hero.jpg');
+    @include bgPosition();
+    @include dFlex();
+}
+
+.card_stack {
+    position: relative;
+    @include dFlex();
+    img {
+        width: 120px;
+        position: absolute;
+    }
+}
+
+.top_card {
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.pick_card {
+    animation: pick-card-animation 1s ease-in-out;
+    transform: scale(1) translateX(250px) translateY(200px) rotate(15deg);
+}
+
+.played_card { 
+    transform: scale(1) translateX(250px) translateY(200px) rotate(15deg);
+}
+
+@keyframes pick-card-animation {
+    0% {
+        transform: scale(1.1); 
+    }
+    50% {
+        transform: scale(1.4) rotate(7deg); 
+    }
+    100% {
+        transform: scale(1) translateX(250px) translateY(200px) rotate(15deg);
+    }
+}
+
+.players_position {
+    position: absolute;
+    right: 0;
+}
