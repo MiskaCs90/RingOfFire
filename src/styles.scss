@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'MonteCarlo';
+    font-family: 'Raleway';
 }
 
 h1,h2 {
@@ -18,8 +18,21 @@ h1,h2 {
     font-style: normal;
     font-weight: 400;
     src: url('./assets/fonts/montecarlo-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
+
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 .font_Monte_Carlo {
     font-family: 'MonteCarlo';
-}  
+}
+
+.font_Raleway {
+    font-family: 'Raleway';
+}
