@@ -5,18 +5,18 @@
     background-color: rgba(245, 238, 238, 0.25);
     gap: 16px;
     border-radius: 80px 0 0 80px;
-    box-shadow: 4px 3px 8px -2px #FFFFFF;
+    box-shadow: 4px 3px 8px -2px rgb(245, 245, 245);
     @include dFlex($jc:'start');
     img {
         height: 100px;
         width: 100px;
         border-radius: 100%;
-        border: 2px solid whitesmoke;
-        background-color: rgba(255, 255, 255, 0.644);
+        border: 2px solid rgb(245, 245, 245);
+        background-color: rgba(245, 245, 245, 0.644);
     }
     span {
         font-size: 24px;
         font-weight: 800;
-        color: whitesmoke;
+        color: rgb(245, 245, 245);
     }
 }
