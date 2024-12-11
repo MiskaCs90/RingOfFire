@@ -8,8 +8,8 @@
     box-shadow: 4px 3px 8px -2px rgb(245, 245, 245);
     @include dFlex($jc:'start');
     img {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         border-radius: 100%;
         border: 2px solid rgb(245, 245, 245);
         background-color: rgba(245, 245, 245, 0.644);
@@ -19,4 +19,8 @@
         font-weight: 800;
         color: rgb(245, 245, 245);
     }
+}
+
+.active_player {
+    background-color: rgba(196, 4, 4, 0.5);
 }
