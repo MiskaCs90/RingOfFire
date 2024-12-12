@@ -1,7 +1,7 @@
 @import './../../mixins.scss';
 
 .start_screen {
-    background: url('/assets/img/start_menu/hero.jpg');
+    background: url('assets/img/start_menu/hero.jpg');
     @include bgPosition();
     @include dFlex();
         img {

@@ -1,7 +1,7 @@
 @import './../../mixins.scss';
 
 .game_field {
-    background: url('/assets/img/start_menu/hero.jpg');
+    background: url('assets/img/start_menu/hero.jpg');
     @include bgPosition();
     @include dFlex();
 }

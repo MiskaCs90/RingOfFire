@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {
+  MatDialog,
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
@@ -30,14 +31,11 @@ import {
   styleUrl: './dialog-addplayer.component.scss'
 })
 export class DialogAddplayerComponent {
-  readonly dialogRef = inject(MatDialogRef<DialogAddplayerComponent>);
   newPlayer:string = '';
+
+  constructor(public dialogRef: MatDialogRef<DialogAddplayerComponent>) {}
 
   onNoClick(): void {
     this.dialogRef.close();
-  }
-
-  animal() {
-
   }
 }

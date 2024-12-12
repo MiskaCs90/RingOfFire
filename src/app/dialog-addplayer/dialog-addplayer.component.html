@@ -8,5 +8,5 @@
     </mat-dialog-content>
 <mat-dialog-actions>
     <button mat-button (click)="onNoClick()">Cancel</button>
-    <button mat-button [mat-dialog-close]="newPlayer">Add</button>
+    <button mat-button [disabled]="newPlayer.length == 0" [mat-dialog-close]="newPlayer">Add</button>
 </mat-dialog-actions>
